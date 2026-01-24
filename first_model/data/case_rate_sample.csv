@@ -1,0 +1,11 @@
+case_rate_id,description,cases,customers,customer_type,ratio,period,period_count
+1,High case rate for dentists,120,30,dentist,4.0,Day,1
+2,Moderate case rate for dentists,80,40,dentist,2.0,Week,1
+3,Low case rate for dentists,50,50,dentist,1.0,Month,1
+4,High case rate for offices,200,20,office,10.0,Day,1
+5,Moderate case rate for offices,150,30,office,5.0,Week,1
+6,Low case rate for offices,100,40,office,2.5,Month,1
+7,High case rate for practices,300,15,practice,20.0,Day,1
+8,Moderate case rate for practices,250,25,practice,10.0,Week,1
+9,Low case rate for practices,200,40,practice,5.0,Month,1
+10,Very low case rate for practices,100,50,practice,2.0,Year,1
