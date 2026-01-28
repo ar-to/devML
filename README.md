@@ -27,6 +27,13 @@ Ensure you have the following installed:
     ```bash
     pip install -r requirements.txt
     ```
+4. Upgrade Packages
+    ```bash
+    pip install pip-review
+    pip-review # similar to `pip list --outdated`
+    pip-review --auto #upgrade all because pip is not easy for this
+    pip freeze requirements.txt
+    ```
 
 ### Running a Model
 1. Prepare your dataset and place it in the `data/` directory.
