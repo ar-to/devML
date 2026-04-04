@@ -32,7 +32,7 @@ Ensure you have the following installed:
     pip install pip-review
     pip-review # similar to `pip list --outdated`
     pip-review --auto #upgrade all because pip is not easy for this
-    pip freeze requirements.txt
+    pip freeze > requirements.txt # update
     ```
 
 ### Running a Model
