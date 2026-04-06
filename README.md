@@ -34,6 +34,12 @@ Ensure you have the following installed:
     pip-review --auto #upgrade all because pip is not easy for this
     pip freeze > requirements.txt # update
     ```
+5. Install internal modules
+Modules like `utils` are self contained modules that live within this project alone to help with helper methods like monitoring. This project follows a flat structure so it remains flexible to organizing. But custom modules like `utils` requires treating this project like a package and install it on the python interpreter local to this project via `venv` above. Simply run:
+    ```bash
+    pip install -e .
+    ```
+Restart the notebook kernel. Then open a file using it such as `explorations/utils_checks.ipynb` and run the cell that imports it to test.
 
 ### Running a Model
 1. Prepare your dataset and place it in the `data/` directory.

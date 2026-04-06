@@ -1,0 +1,3 @@
+# How to run
+
+Deep learning models are inheritely data hungry and therefore consume significant resources. As a consequence, its necessary to have a powerful machine, with a high end GPU to run these. You can run these locally if your machine is capable but a preferred way is via an external runtime like Google Colab. To do this, install the recommended extension in vscode, sign in to google and select your kernel. 
