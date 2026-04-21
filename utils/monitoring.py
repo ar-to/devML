@@ -4,6 +4,33 @@ import os, psutil
 import numpy as np
 import pandas as pd
 
+
+def check_file_size(file_path, expected_size_mb=100):
+    """Check the size of a file and compare it to an expected size in megabytes.
+    
+    Args:        
+      file_path (str or Path): The path to the file to check.
+      expected_size_mb (float): The expected size of the file in megabytes.
+
+    Returns:
+      None
+    
+    Prints the actual size of the file and whether it meets the expected size.
+
+    Usage:
+    ```python
+    from pathlib import Path
+    NGRAM_FILE = Path("one-grams.txt")
+    monitoring.check_file_size(NGRAM_FILE, expected_size_mb=100)
+
+    ```
+    """
+    actual_size_mb = file_path.stat().st_size / (1024**2)
+    if actual_size_mb >= expected_size_mb:
+        print(f"File size is {actual_size_mb:.2f} MB, which meets the expected size of {expected_size_mb} MB.")
+    else:
+        print(f"File size is {actual_size_mb:.2f} MB, which is smaller than the expected size of {expected_size_mb} MB.")
+
 class Monitoring:
     """
     Class to monitor elapsed time and memory usage.

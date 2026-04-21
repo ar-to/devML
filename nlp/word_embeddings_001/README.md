@@ -1,0 +1,2 @@
+
+This takes most of the code a tutorial on word embeddings from tensorflow but minor error fixes and code for plotting. For a follow up creation see nlp/word_embeddings_002 which allows multiple sources and models to be run.
