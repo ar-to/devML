@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx} % Required for inserting images
+
+\title{Probability Theory Definitions}
+\author{Ariel Guzman}
+\date{July 2026}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+
+\subsection*{Typical Min-Max Scaling or Normalization Function}
+
+\[
+x_{\text{scaled}} = \frac{x - x_{\min}}{x_{\max} - x_{\min}}
+\]
+
+\[
+x_{\text{scaled}} = a + \frac{(x - x_{\min})(b - a)}{x_{\max} - x_{\min}}
+\]
+
+\subsection*{1D (Single Variable) Probability Density Function (PDF)}
+
+A valid PDF must be non-negative and integrate to 1 over its entire domain:
+
+\[
+P(a \leq X \leq b) = \int_{a}^{b} f(x) \, dx
+\]
+
+\begin{enumerate}
+    \item $f(x) \geq 0 \quad \text{for all } x$
+    \item $\int_{-\infty}^{\infty} f(x) \, dx = 1$
+\end{enumerate}
+
+\subsection*{2D (2 Variables) Joint Probability Density Function (JPDF)}
+
+The function $f(x_1, x_2)$ is the JPDF itself. We use a double integral over this function to calculate probabilities (volumes under the surface):
+
+\[
+P(a \leq x_1 \leq b \text{ and } c \leq x_2 \leq d) = \int_{c}^{d} \int_{a}^{b} f(x_1, x_2) \, dx_1 \, dx_2
+\]
+
+If integrated over the entire expected domain, the total volume must equal 1:
+
+\[
+\int_{c}^{d} \int_{a}^{b} f(x_1, x_2) \, dx_1 \, dx_2 = 1
+\]
+
+\end{document}
