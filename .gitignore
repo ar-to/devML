@@ -172,3 +172,18 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# graphify
+# Ignore local background engine variables and parsing cache
+graphify-out/cache/
+graphify-out/notebooks/
+graphify-out/.graphify_*
+graphify-out/cost.json
+graphify-out/manifest.json
+
+# Ignore the heavy local visualization file
+graphify-out/graph.html
+
+# ALLOW tracking the shared graph files (as recommended by the docs)
+# graphify-out/graph.json
+# graphify-out/GRAPH_REPORT.md

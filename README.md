@@ -52,3 +52,9 @@ Restart the notebook kernel. Then open a file using it such as `explorations/uti
 ### Notes
 - Modify `config.yaml` to adjust model parameters.
 - Refer to the `docs/` folder for detailed explanations of each module.
+
+## Knowledge Graph (graphify)
+This repo has a [graphify](https://docs.graphify.com/open-source/quickstart) knowledge graph of its code, notebooks and docs. Claude Code and its subagents can query it with `/graphify query "<question>"` instead of re-reading the whole repo. Rebuild it with `/graphify .`, or run `/graphify . --update` to re-extract only changed files.
+- Outputs are in `graphify-out/`. A log of each build is in [docs/graphify_changelog.md](docs/graphify_changelog.md).
+- graphify can't read `.ipynb` files, so notebooks are converted to `.py` files in `graphify-out/notebooks/` before each build.
+- **Git:** `.gitignore` excludes everything in `graphify-out/` except `graph.json` and `GRAPH_REPORT.md`. Those two files are committed so a fresh clone, or a subagent, can query the graph without rebuilding it. The cache, manifest, cost log, notebook conversions and `graph.html` stay local.
