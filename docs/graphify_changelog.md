@@ -137,3 +137,11 @@ Everything below is in `graphify-out/`.
 | `GRAPH_REPORT.md` | yes | The full report |
 | `graph.html` | no | Interactive graph; open in a browser |
 | `notebooks/`, `cache/`, `manifest.json`, `cost.json`, `.graphify_*` | no | Local working files and build state; rebuilt as needed |
+
+### Sample command
+
+Used inside Claude.
+
+```
+/graphify query "find me structure to use for logistic regression to start a new ipynb. Need a list of top sections to act as headers and use as a rule of thumb. Also provide existing examples to use as references for details and further work."  
+```
